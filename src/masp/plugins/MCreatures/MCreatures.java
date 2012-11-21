@@ -2,7 +2,7 @@ package masp.plugins.MCreatures;
 
 
 import masp.plugins.MCreatures.API.MCreature;
-import masp.plugins.MCreatures.Entities.MEntityZombie;
+import masp.plugins.MCreatures.Entities.MEntityCreeper;
 
 
 public class MCreatures {
@@ -11,7 +11,7 @@ public class MCreatures {
 	public void createEntity(MCreature mc){
 		switch(mc.getEntity()){
 		case ZOMBIE:
-			MEntityZombie.setAPIMob(mc);
+			MEntityCreeper.setAPIMob(mc);
 			break;
 		default:
 			break;

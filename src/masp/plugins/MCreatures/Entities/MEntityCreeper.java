@@ -20,10 +20,10 @@ import net.minecraft.server.PathfinderGoalRandomLookaround;
 import net.minecraft.server.PathfinderGoalRandomStroll;
 import net.minecraft.server.World;
 
-public class MEntityZombie extends EntityCreeper {
+public class MEntityCreeper extends EntityCreeper {
 	public static MCreature MCreature;
 	@SuppressWarnings("unchecked")
-	public MEntityZombie(World world) {
+	public MEntityCreeper(World world) {
 		super(world);
 		try{
 			//Set Navigation
@@ -58,7 +58,7 @@ public class MEntityZombie extends EntityCreeper {
         this.targetSelector.a(2, new PathfinderGoalNearestAttackableTarget(this, EntityVillager.class, 16.0F, 0, false));
     }
 	public static void setAPIMob(MCreature MCreature) {
-		MEntityZombie.MCreature = MCreature;
+		MEntityCreeper.MCreature = MCreature;
 		
 	}
 }
