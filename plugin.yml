@@ -1,0 +1,5 @@
+name: MCreatures
+author: krazyswagga
+version: 0.1
+main: masp.plugins.MCreatures.MCreatures
+depend: [MRPG]
