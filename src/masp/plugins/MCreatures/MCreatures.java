@@ -33,7 +33,7 @@ public class MCreatures extends JavaPlugin {
 		replaceMethod(mc.getEntity());
 		switch(mc.getEntity()){
 		case ZOMBIE:
-			MEntityCreeper.creatEntityCreeper();
+			MEntityCreeper.creatEntityCreeper(null);
 			break;
 		default:
 			break;
